@@ -44,4 +44,8 @@ function goToOnlineQuote() {
     window.location='#contact-form-section';
 }
 
+function goToBookAService() {
+    window.location='/book-service/book-service.html';
+}
+
 navSlide();

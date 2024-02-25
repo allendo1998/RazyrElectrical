@@ -158,6 +158,10 @@ header p {
     border-bottom: 2px solid grey;
 }
 
+.servicesContent a{
+    text-decoration: none;
+}
+
 .servicesContent h1 {
     font-family: 'Assistant-Bold';
     color: #0CB8C3;
@@ -189,6 +193,7 @@ header p {
     font-family: 'Assistant-Regular';
     cursor: pointer;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 .serviceCard a:hover {

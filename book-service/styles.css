@@ -83,7 +83,6 @@ nav {
     display: none;
 }
 
-/* new section */
 section {
     padding-top: 5rem;
     display: flex;
@@ -111,13 +110,42 @@ section {
 }
 
 .booking-info {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 12.5rem 0 5rem 0;
     background-color: #dbdbdb;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+    gap: 2rem;
+}
+
+.booking-info p {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    line-height: 2.5;
+    font-family: 'Assistant-Regular';
+    color: #252C2C;
+
+}
+
+.icon-text-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon-text p, a {
+    padding: 0;
+    color: black;
+    font-family: 'Assistant-Bold';
 }
 
 .questionGroup {
@@ -145,19 +173,18 @@ form button {
 }
 
 input {
+    padding-left: 0.5rem;
     height: 30px;
     border: none;
     border-radius: 5px;
 }
 
 textarea {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
     border: none;
     border-radius: 5px;
 }
-
-
-
-/* new section */
 
 footer {
     display: flex;
@@ -225,6 +252,11 @@ footer {
     .bookingContent {
         flex-direction: column;
         gap: 5rem;
+    }
+
+    .booking-info {
+        padding: 3rem 0 5rem 0;
+
     }
     
 
@@ -315,8 +347,21 @@ footer {
 
 @media (max-width: 500px) {
     form {
-        display: flex;
-        flex-direction: column;
+        width: 350px;
+    }
+
+    .booking-info p {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .icon-text-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .icon-text p {
+        padding: 0px;
     }
 
     #additional-info-text
@@ -324,7 +369,6 @@ footer {
         margin-bottom: -20px;
     }
 }
-
 
 
 .nav-active {
