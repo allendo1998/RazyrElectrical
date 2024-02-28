@@ -45,7 +45,7 @@ function goToOnlineQuote() {
 }
 
 function goToBookAService() {
-    window.location='/book-service/book-service.html';
+    window.location='./book-service/book-service.html';
 }
 
 navSlide();
