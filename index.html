@@ -93,14 +93,14 @@
               <p>or call us on 0449 983 729</p>
             </div>
            
-            <form class="contactForm" id="contactForm">
+            <form class="contactForm" id="contactForm" action="" method="POST">
+                <input type="hidden" id="subject" name="subject" value="free-online-quote">
                 <input type="text" id="name" name="name" placeholder="Name" required>  
-                <input type="text" id="number" name="number" placeholder="Contact Number">
-                <span class="error-message" id="emailError"></span>
+                <input type="text" id="number" name="number" placeholder="Contact Number" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-              <button type="button" onclick="submitForm()">Submit</button>
-          </form>
+                <input class="submit-button" type="submit">
+            </form>
         </section>
 
         <section class="reviewsSection">
@@ -203,7 +203,13 @@
           </div>
       </div>
   </footer>
-
+  <script>
+    window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+  </script>
 	<script src="./index.js"></script>
   </body>
 </html>
