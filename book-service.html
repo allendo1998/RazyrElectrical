@@ -55,7 +55,22 @@
         </div>
         <div class="questionGroup">
           <label>Service</label>
-          <input type="text" id="service" name="service"required>  
+          <select id="service-select" id="service-select" name="service" required>
+            <option disabled selected value> -- select a service -- </option>
+            <option value="Electrical safety service" id="electrical-safety-service">ELECTRICAL SAFETY SERVICE</option>
+            <option value="Smoke alarm safety service" id="smoke-alarm-safety-service">SMOKE ALARM SAFETY SERVICE</option>
+            <option value="In person inspection and quote" id="in-person-inspection-and-quote">IN-PERSON INSPECTION AND QUOTE</option>
+            <option value="24/7 Emergency assistance" id="24/7-emergency-assistance">24/7 EMERGENCY ASSISTANCE</option>
+            <option value="All power and lighting installations" id="all-power-and-lighting-installations">ALL POWER & LIGHTING INSTALLATIONS</option>
+            <option value="Electrical fault finding experts" id="electrical-fault-finding">ELECTRICAL FAULT FINDING EXPERTS</option>
+            <option value="Switchboard upgrades" id="switchboard-upgrades">SWITCHBOARD UPGRADES</option>
+            <option value="Smoke alarm service and install" id="smoke-alarm-service-and-install">SMOKE ALARM SERVICE AND INSTALL</option>
+            <option value="Telephone networking antennas" id="telephone-networking-antennas">TELEPHONE, NETWORKING & ANTENNAS</option>
+            <option value="Tenancy electrical installs" id="tenancy-electrical-installs">TENANCY ELECTRICAL INSTALLS</option>
+            <option value="RCD circuit breakers" id="rcd-circuit-breakers">RCD & CIRCUIT BREAKERS</option>
+            <option value="CCTVS" id="cctvs">CCTVS</option>
+            <option value="Other" id="other">OTHER</option>
+          </select>
         </div>
         <div class="questionGroup">
           <label>Extra Info</label>
@@ -114,5 +129,6 @@
 }
 </script>
 <script src="./index.js"></script>
+<script src="./book-service/selector.js"></script>
 </body>
 </html>

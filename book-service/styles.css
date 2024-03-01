@@ -172,11 +172,15 @@ form .submit-button {
     font-size: 18px;
 }
 
-input {
+input, select{
     padding-left: 0.5rem;
     height: 30px;
     border: none;
     border-radius: 5px;
+}
+
+select {
+    font-family: 'Assistant-Regular';
 }
 
 textarea {
@@ -184,6 +188,7 @@ textarea {
     padding-left: 0.5rem;
     border: none;
     border-radius: 5px;
+    font-family: 'Assistant-Regular';
 }
 
 footer {
