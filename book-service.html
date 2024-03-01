@@ -40,14 +40,14 @@
     <section>
      <div class="booking-form">
       <h2>Book a service</h2>
-      <form class="contactForm" id="contactForm">
+      <form class="contactForm" id="contactForm" action="https://formspree.io/f/mgegyden" method="POST">
         <div class="questionGroup">
           <label>Name</label>
           <input type="text" id="name" name="name" required>  
         </div>
         <div class="questionGroup">
           <label>Number</label>
-          <input type="text" id="number" name="number">
+          <input type="text" id="number" name="number" required>
         </div>
         <div class="questionGroup">
           <label>Email</label>
@@ -55,13 +55,13 @@
         </div>
         <div class="questionGroup">
           <label>Service</label>
-          <input type="text" id="name" name="name"required>  
+          <input type="text" id="service" name="service"required>  
         </div>
         <div class="questionGroup">
           <label>Extra Info</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-        <button type="button" onclick="submitForm()">Submit</button>
+        <input class="submit-button" type="submit">
       </form>
      </div>
 
@@ -106,7 +106,13 @@
         </div>
     </div>
 </footer>
-
+<script>
+  window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+</script>
 <script src="./index.js"></script>
 </body>
 </html>

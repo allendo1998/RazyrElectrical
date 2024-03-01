@@ -19,25 +19,11 @@ const navSlide = () => {
 }
 
 function submitForm() {
-    var emailInput = document.getElementById("email");
-    var emailError = document.getElementById("emailError");
-
-    // Validate email format
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailInput.value)) {
-        emailError.textContent = "Please enter a valid email address.";
-        emailError.style.display = 'block';
-        emailInput.style.borderColor = 'red';
-        return;
-    } else {
-        emailError.textContent = "";
-        emailError.style.display = 'none';
-        emailInput.style.borderColor = 'grey';
-    }
-
-    // You can add additional validation and form submission logic here
-    alert("Form submitted!");
-    document.getElementById("contactForm").reset(); // Reset the form after submission
+    window.onbeforeunload = () => {
+        for(const form of document.getElementsByTagName('form')) {
+          form.reset();
+        }
+      }
 }
 
 function goToOnlineQuote() {

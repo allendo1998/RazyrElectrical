@@ -160,7 +160,7 @@ form {
     width: 400px;
 }
 
-form button {
+form .submit-button {
     background-color: #04A5BD;
     height: 40px;
     border: none;
