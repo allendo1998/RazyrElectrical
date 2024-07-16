@@ -96,6 +96,10 @@ section {
     height: 100%;
 }
 
+.about-us-container {
+    height: 100px;
+}
+
 .mission-container, .about-us-container {
     display: flex;
     flex-direction: row;
@@ -118,7 +122,7 @@ section {
 }
 
 .mission-container img, .about-us-container img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .about-us-statement h3 {
@@ -214,9 +218,9 @@ footer {
         flex-direction: column;
     }
 
-    /* .mission-container img, .about-us-container img {
-        width: 10%;
-    } */
+    .mission-container img, .about-us-container img {
+        max-width: 100%;
+    }
     
     nav {
         opacity: 1;
